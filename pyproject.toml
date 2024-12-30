@@ -5,12 +5,12 @@ readme = "README.md"
 keywords = ["kitchenowl"]
 version = "0.0.1"
 authors = [
+    {name = "Tom Bursch", email = "tom@kitchenowl.org"},
     {name = "super-qua"},
-    {name = "Tom Bursch", email = "tom@kitchenowl.org"}
 ]
 license = {file = "LICENSE"}
 classifiers = [
-  "Development Status :: 4 - Beta",
+  "Development Status :: 3 - Alpha",
   "Programming Language :: Python"
 ]
 dependencies = [
@@ -23,6 +23,7 @@ test = [
     "aioresponses == 0.7.6",
     "pytest == 8.2.2",
     "pytest-asyncio == 0.23.7",
+    "pytest-cov==6.0.0",
     "syrupy == 4.6.1"
 ]
 lint = [
@@ -33,6 +34,7 @@ lint = [
 Homepage = "https://kitchenowl.org"
 Repository = "https://github.com/tombursch/kitchenowl-python"
 Issues = "https://github.com/TomBursch/kitchenowl/issues"
+Changelog = "https://github.com/tombursch/kitchenowl-python/blob/main/CHANGELOG.md"
 
 
 [tool.pytest.ini_options]

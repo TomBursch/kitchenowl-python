@@ -21,7 +21,7 @@ DEFAULT_SHOPPINGLIST_RESPONSE = {
     "household_id": DEFAULT_HOUSEHOLD_ID,
     "id": DEFAULT_SHOPPINGLIST_ID_1,
     "name": f"list_{DEFAULT_SHOPPINGLIST_ID_1}",
-    "updated_at": 0
+    "updated_at": 0,
 }
 
 DEFAULT_SHOPPINGLIST_RESPONSE_2 = {
@@ -29,7 +29,7 @@ DEFAULT_SHOPPINGLIST_RESPONSE_2 = {
     "household_id": DEFAULT_HOUSEHOLD_ID,
     "id": DEFAULT_SHOPPINGLIST_ID_2,
     "name": f"list_{DEFAULT_SHOPPINGLIST_ID_2}",
-    "updated_at": 0
+    "updated_at": 0,
 }
 
 DEFAULT_USER_RESPONSE = {
@@ -41,7 +41,7 @@ DEFAULT_USER_RESPONSE = {
     "owner": True,
     "photo": None,
     "updated_at": 0,
-    "username": f"user {DEFAULT_USER_ID}"
+    "username": f"user {DEFAULT_USER_ID}",
 }
 
 DEFAULT_HOUSEHOLDS_RESPONSE = [
@@ -56,10 +56,9 @@ DEFAULT_HOUSEHOLDS_RESPONSE = [
         "photo": None,
         "planner_feature": True,
         "updated_at": 0,
-        "view_ordering": ["items","recipes"]
+        "view_ordering": ["items", "recipes"],
     }
 ]
-
 
 
 DEFAULT_SHOPPINGLIST_ITEM_RESPONSE = {

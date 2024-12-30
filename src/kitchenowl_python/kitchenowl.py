@@ -115,9 +115,7 @@ class KitchenOwl:
     async def _delete(self, path: str, json_data: dict) -> bool:
         """Perform a DELETE request to the KitchenOwl instance."""
 
-        return await self._request(
-            METH_DELETE, path=path, json_data=json_data, return_json=False
-        )
+        return await self._request(METH_DELETE, path=path, json_data=json_data, return_json=False)
 
     async def test_connection(self) -> bool:
         """Test the kitchenowl token by performing HEAD on the user endpoint.
@@ -184,9 +182,7 @@ class KitchenOwl:
             await self._get(f"api/household/{household_id}/shoppinglist")
         )
 
-    async def get_shoppinglist_items(
-        self, list_id: int
-    ) -> KitchenOwlShoppingListItemsResponse:
+    async def get_shoppinglist_items(self, list_id: int) -> KitchenOwlShoppingListItemsResponse:
         """Get all shopping list items on the list.
 
         Args:
@@ -301,9 +297,7 @@ class KitchenOwl:
         json_data = {"description": item_description}
 
         return KitchenOwlShoppingListItem(
-            await self._post(
-                f"api/shoppinglist/{list_id}/item/{item_id}", json_data, True
-            )
+            await self._post(f"api/shoppinglist/{list_id}/item/{item_id}", json_data, True)
         )
 
     async def remove_shoppinglist_item(self, list_id: int, item_id: int) -> bool:

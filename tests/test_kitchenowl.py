@@ -89,6 +89,7 @@ def default_shoppinglists_response(
     """Default items on the shopping list response."""
     return KitchenOwlShoppingListsResponse([default_shoppinglist, default_shoppinglist_2])
 
+
 @pytest.fixture
 def default_user_response() -> KitchenOwlUser:
     """Default items on the shopping list response."""
@@ -250,6 +251,7 @@ async def test_connection_test(responses: aioresponses, kitchenowl_api: KitchenO
     actual = await kitchenowl_api.test_connection()
     assert actual is True
 
+
 async def test_get_user_snapshot(
     default_user_response: KitchenOwlUser,
     responses: aioresponses,
@@ -274,6 +276,7 @@ async def test_get_user_snapshot(
         params=None,
         json=None,
     )
+
 
 async def test_get_households_snapshot(
     default_households_response: KitchenOwlHouseholdsResponse,
