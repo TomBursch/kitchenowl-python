@@ -8,7 +8,6 @@ from aiohttp import ClientSession
 from aiohttp.hdrs import METH_DELETE, METH_GET, METH_HEAD, METH_POST
 from aioresponses import CallbackResult, aioresponses
 
-import kitchenowl_python
 from kitchenowl_python.exceptions import KitchenOwlAuthException, KitchenOwlRequestException
 from kitchenowl_python.kitchenowl import KitchenOwl
 from kitchenowl_python.types import (

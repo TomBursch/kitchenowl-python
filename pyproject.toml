@@ -1,15 +1,12 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
 [project]
 name = "kitchenowl-python"
 description = "A python wrapper for the KitchenOwl API"
 readme = "README.md"
 keywords = ["kitchenowl"]
-version = "0.1.0"
+version = "0.0.1"
 authors = [
-    {name = "super-qua"}
+    {name = "super-qua"},
+    {name = "Tom Bursch", email = "tom@kitchenowl.org"}
 ]
 license = {file = "LICENSE"}
 classifiers = [
@@ -33,7 +30,9 @@ lint = [
 ]
 
 [project.urls]
-Repository = "https://github.com/super-qua/kitchenowl-python"
+Homepage = "https://kitchenowl.org"
+Repository = "https://github.com/tombursch/kitchenowl-python"
+Issues = "https://github.com/TomBursch/kitchenowl/issues"
 
 
 [tool.pytest.ini_options]
