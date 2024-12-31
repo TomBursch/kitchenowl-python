@@ -14,7 +14,7 @@ classifiers = [
   "Programming Language :: Python"
 ]
 dependencies = [
-    "aiohttp == 3.10.11"
+    "aiohttp == 3.11.11"
 ]
 requires-python = ">=3.8"
 
@@ -23,7 +23,7 @@ test = [
     "aioresponses == 0.7.6",
     "pytest == 8.2.2",
     "pytest-asyncio == 0.23.7",
-    "pytest-cov==6.0.0",
+    "pytest-cov == 6.0.0",
     "syrupy == 4.6.1"
 ]
 lint = [
