@@ -22,7 +22,7 @@ requires-python = ">=3.8"
 test = [
     "aioresponses == 0.7.6",
     "pytest == 8.3.4",
-    "pytest-asyncio == 0.23.7",
+    "pytest-asyncio == 0.25.0",
     "pytest-cov == 6.0.0",
     "syrupy == 4.6.1"
 ]
