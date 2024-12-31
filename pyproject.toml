@@ -24,7 +24,7 @@ test = [
     "pytest == 8.3.4",
     "pytest-asyncio == 0.23.7",
     "pytest-cov == 6.0.0",
-    "syrupy == 4.6.1"
+    "syrupy == 4.8.0"
 ]
 lint = [
     "ruff == 0.6.1"
