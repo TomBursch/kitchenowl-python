@@ -23,7 +23,7 @@ test = [
     "aioresponses == 0.7.8",
     "pytest == 8.3.4",
     "pytest-asyncio == 0.25.3",
-    "pytest-cov == 6.0.0",
+    "pytest-cov == 6.1.1",
     "syrupy == 4.8.1"
 ]
 lint = [
