@@ -1,7 +1,8 @@
 """Tests for the KitchenOwl API wrapper."""
 
 import asyncio
-from typing import Any, AsyncGenerator, Dict, Generator, Literal
+from collections.abc import AsyncGenerator, Generator
+from typing import Any, Literal
 
 import pytest
 from aiohttp import ClientSession
@@ -153,13 +154,13 @@ def default_item() -> KitchenOwlItem:
 
 
 @pytest.fixture
-def update_item_response() -> Dict[str, Any]:
+def update_item_response() -> dict[str, Any]:
     """Response to the updated item."""
     return UPDATED_ITEM_RESPONSE
 
 
 @pytest.fixture
-def update_shoppinglist_item_response() -> Dict[str, Any]:
+def update_shoppinglist_item_response() -> dict[str, Any]:
     """Response to the updated item."""
     return UPDATED_SHOPPINGLIST_ITEM_RESPONSE
 
@@ -416,7 +417,7 @@ async def test_add_shoppinglist_item(
 
 
 async def test_update_shoppinglist_item_description(
-    update_shoppinglist_item_response: Dict[str, Any],
+    update_shoppinglist_item_response: dict[str, Any],
     default_shoppinglist_item: KitchenOwlShoppingListItem,
     responses: aioresponses,
     kitchenowl_api: KitchenOwl,
@@ -472,7 +473,7 @@ async def test_remove_shoppinglist_item(responses: aioresponses, kitchenowl_api:
 
 async def test_update_item_snapshot(
     default_item: KitchenOwlItem,
-    update_item_response: Dict[str, Any],
+    update_item_response: dict[str, Any],
     responses: aioresponses,
     kitchenowl_api: KitchenOwl,
     snapshot,

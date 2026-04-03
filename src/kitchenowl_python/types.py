@@ -2,7 +2,7 @@
 
 # TypedDict for now as it allows for changes in the API return values
 
-from typing import List, NotRequired, TypedDict
+from typing import NotRequired, TypedDict
 
 
 class KitchenOwlShoppingListCategory(TypedDict):
@@ -73,21 +73,21 @@ class KitchenOwlHousehold(TypedDict):
     expenses_feature: bool
     id: int
     language: str
-    member: List[KitchenOwlUser]
+    member: list[KitchenOwlUser]
     name: str
     photo: str | None
     planner_feature: bool
     updated_at: int
-    view_ordering: List[str]
+    view_ordering: list[str]
 
 
-class KitchenOwlHouseholdsResponse(List[KitchenOwlHousehold]):
+class KitchenOwlHouseholdsResponse(list[KitchenOwlHousehold]):
     """The households response from KitchenOwl."""
 
 
-class KitchenOwlShoppingListsResponse(List[KitchenOwlShoppingList]):
+class KitchenOwlShoppingListsResponse(list[KitchenOwlShoppingList]):
     """The shopping lists response from KitchenOwl."""
 
 
-class KitchenOwlShoppingListItemsResponse(List[KitchenOwlShoppingListItem]):
+class KitchenOwlShoppingListItemsResponse(list[KitchenOwlShoppingListItem]):
     """The response for shopping list items from KitchenOwl."""
